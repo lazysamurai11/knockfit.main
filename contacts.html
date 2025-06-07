@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Knockfit</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include the same head content as index.html -->
+</head>
+<body>
+    <!-- Header -->
+    <header>...</header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="w-full py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6 text-white">Ready to Start Your Fitness Journey?</h2>
+                    <p class="text-xl text-gray-300 mb-8">Fill out the form below, and we'll get back to you via WhatsApp within 24 hours to discuss how we can help you achieve your fitness goals.</p>
+                    
+                    <form id="contactForm">
+                        <div class="mb-6">
+                            <label for="name" class="block mb-2 font-medium text-white">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-slate-700 border-none rounded focus:ring-2 focus:ring-primary" placeholder="John Smith" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block mb-2 font-medium text-white">Email Address (Optional)</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-slate-700 border-none rounded focus:ring-2 focus:ring-primary" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2 font-medium text-white">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-slate-700 border-none rounded focus:ring-2 focus:ring-primary" placeholder="Tell us about your fitness goals..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-3 bg-primary text-white font-semibold rounded-button whitespace-nowrap hover:bg-blue-600 transition-colors">Contact Us via WhatsApp</button>
+                    </form>
+                    
+                    <div id="formSuccess" class="hidden mt-4 p-4 bg-green-500/20 border border-green-500 rounded text-center">
+                        <p class="text-green-400">Thank you! We'll be in touch via WhatsApp soon.</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <!-- WhatsApp QR Code -->
+                    <img src="assets/whatsapp-qr.png" alt="WhatsApp QR Code" class="w-48 h-48 mx-auto mb-6">
+                    <p class="text-gray-300 text-center">Scan the QR code to start a conversation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>...</footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* styles.css */
+
+:root {
+    --primary: #3b82f6;
+    --secondary: #10b981;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+.hero-section {
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.3)), url('https://readdy.ai/api/search-image?query=A%20professional%20personal%20trainer%20guiding%20a%20client%20through%20a%20workout%20in%20a%20modern%2C%20well-lit%20home%20setting.%20The%20trainer%20is%20demonstrating%20proper%20form%20for%20a%20dumbbell%20exercise.%20The%20home%20environment%20is%20stylish%20with%20minimal%20equipment.%20Natural%20light%20streams%20through%20large%20windows.%20The%20scene%20conveys%20comfort%2C%20professionalism%2C%20and%20personalized% %20attention&width=1600&height=800&seq=hero1&orientation=landscape');
+    background-size: cover;
+    background-position: center right;
+    height: 600px;
+    position: relative;
+}
+
+.testimonial-card {
+    background: linear-gradient(145deg, #1a2234, #1e293b);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+.benefit-card {
+    background: linear-gradient(145deg, #1a2234, #1e293b;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+}
+
+.step-card {
+    background: linear-gradient(145deg, #1a2234, #1e293b);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.contact-form {
+    background: linear-gradient(145deg, #1a2234, #1e293b);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+button {
+    cursor: pointer;
+}
+
+.rounded-button {
+    border-radius: var(--border-radius);
+}
